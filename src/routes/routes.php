@@ -2,9 +2,6 @@
 /**
  * EventManager Routes
  */
-
-Route::group([], function() {
-	Route::get('register', function() {
-		return 'RegisterNow';
-	});
+Route::group(['namespace' => '\Duikb00t\EventManager\Controllers'], function () {
+	Route::get('login', 'ManagerController@index');
 });
