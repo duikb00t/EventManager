@@ -30,7 +30,7 @@ class EventManagerServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
 
         // Setup the views
-        $this->loadViewsFrom(__DIR__.'/resources/views', 'eventmanagereventmanager');
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'eventmanager');
 
     }
 
