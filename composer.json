@@ -1,0 +1,18 @@
+{
+    "name": "root/event-manager",
+    "description": "Event Manager system",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Duikb00t",
+            "email": "ward@ldl.be"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "Duikb00t\\EventManager\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
