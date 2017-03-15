@@ -20,22 +20,17 @@ class EventManagerServiceProvider extends ServiceProvider
 
             // Run the migration
             $timestamp = date('Y_m_d_His', time());
-            
-            var_dump(__DIR__);
 
             $this->publishes([
                 __DIR__ . "/migrations/create_managers_table.stub" => database_path("migrations/{$timestamp}_create_managers_table.php"),
                 ], 'migrations');
         }
 
-
         // Setup the routes
         $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
 
         // Setup the views
-        //$this->loadViewsFrom(__DIR__.'/resources/views', 'strava');
-
-
+        $this->loadViewsFrom(__DIR__.'/resources/views', 'eventmanagereventmanager');
 
     }
 
