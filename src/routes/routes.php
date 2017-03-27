@@ -1,5 +1,13 @@
 <?php
 /**
+ * Form
+ */
+Route::group(['namespace' => '\Duikb00t\EventManager\Controllers'], function () {
+	Route::get('register', 'FormController@index');
+	Route::post('register', 'FormController@store')->name('register');
+});
+
+/**
  * EventManager Routes
  */
 Route::group(['prefix' =>'manager' ,'namespace' => '\Duikb00t\EventManager\Controllers'], function () {
