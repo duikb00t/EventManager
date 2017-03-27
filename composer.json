@@ -1,5 +1,5 @@
 {
-    "name": "root/event-manager",
+    "name": "LDL/event-manager",
     "description": "Event Manager system",
     "license": "MIT",
     "authors": [
@@ -13,6 +13,9 @@
           "Duikb00t\\EventManager\\": "src/"
         }
     },
+
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "barryvdh/laravel-snappy": "^0.3.3"
+    }
 }

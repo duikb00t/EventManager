@@ -40,7 +40,7 @@ class EventManagerServiceProvider extends ServiceProvider
      * @return void
      */
     public function register() {
-        
+        $this->app->register(\Barryvdh\Snappy\ServiceProvider::class);
     }
 
     /**
